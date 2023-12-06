@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+@media (max-width: 768px) {
+  .shoes-container {
+    padding-left: 0;
+  }
+  .contact{
+    margin-left:0;
+   margin-right:0
+    
+ 
+  }
+}
+
+
+
+
+
