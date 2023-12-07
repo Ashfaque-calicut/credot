@@ -6,7 +6,7 @@ import axios from 'axios'
     cartStatus:'idle'
  };
  export const postCartProducts=createAsyncThunk('cart/post',async(obj)=>{
-    const data=await axios.post("https://cart-swi5.onrender.com/api/cart/add-cart",obj);
+    const data=await axios.post("https://cart-3q51.onrender.com/api/cart/add-cart",obj);
    // const data=await axios.post(" http://localhost:4400/api/cart/add-cart",obj);
 
    
@@ -14,7 +14,7 @@ import axios from 'axios'
  });
 
  export const getCartProducts=createAsyncThunk('cart/get',async()=>{
-    const data=await axios.get("https://cart-swi5.onrender.com/api/cart/view-cart");
+    const data=await axios.get("https://cart-3q51.onrender.com/api/cart/view-cart");
    //  const data=await axios.get("http://localhost:4400/api/cart/view-cart");
 
 
@@ -22,13 +22,13 @@ import axios from 'axios'
     return result;
  });
  export const deleteCartProducts=createAsyncThunk('cart/delete',async(id)=>{
-   const data=await axios.delete(`https://cart-swi5.onrender.com/api/cart/delete-product/${id}`);
+   const data=await axios.delete(`https://cart-3q51.onrender.com/api/cart/delete-product/${id}`);
    // const data=await axios.delete(`http://localhost:4400/api/cart/delete-product/${id}`);
 
    return data;
  })
  export const deleteAllCartProducts = createAsyncThunk('cart/deleteAll', async () => {
-   const data = await axios.delete(`https://cart-swi5.onrender.com/api/cart/delete-all`);
+   const data = await axios.delete(`https://cart-3q51.onrender.com/api/cart/delete-all`);
    // const data = await axios.delete(`http://localhost:4400/api/cart/delete-all`);
 
    return data;
