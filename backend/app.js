@@ -17,6 +17,10 @@ mongoose.connect(process.env.MONGO_URL,{
 
 app.use('/api/cart',productRouter)
 
+app.get('/',(req,res)=>{
+    res.send("server is started")
+})
+
 
 
 
